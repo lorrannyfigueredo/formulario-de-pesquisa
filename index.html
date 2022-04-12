@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="img">
+  <header id="header">
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+      
+      <label for="email" id="email-label">Email</label>
+      <input id="email" type="email" placeholder="Enter your name" required>
+      
+      <label for="number" id="number-label">Age(optional)</label>
+      <input id="number" type="number" placeholder="Age" min="0" max="150" pattern="[0-9]" required>
+      
+      <label for="dropdown">Which option best describes your current role?</label>
+      <select id="dropdown" name="dropdown">
+        <option value="select">Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="prefer">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+      
+      <label>Would you recommend freeCodeCamp to a friend?</label>
+      <label class="radio"><input type="radio" id="definitely" name="fav_language" value="definitely" checked> Definitely</label>
+      <label class="radio"><input type="radio" id="maybe" name="fav_language" value="maybe"> Maybe</label>
+      <label class="radio"><input type="radio" id="not" name="fav_language" value="not"> Not sure</label>
+      
+      <label for="dropdown1">What is your favorite feature of freeCodeCamp?</label>
+      <select id="dropdown1" name="dropdown1">
+        <option value="select">Select an option</option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="open">Open source</option>
+      </select>
+      
+      <label>What would you like to see improved? (Check all that apply)</label>
+      <label class="checkbox"><input type="checkbox" id="vehicle" name="vehicle1" value="Bike"> Front-end Projects</label>
+      <label class="checkbox"><input type="checkbox" id="vehicle" name="vehicle2" value="Car"> Back-end Projects</label>
+      <label class="checkbox"><input type="checkbox" id="vehicle" name="vehicle3" value="Boat"> Challenges</label>
+      <label class="checkbox"><input type="checkbox" id="vehicle" name="vehicle4" value="Boat"> Open Source Community</label>
+      <label class="checkbox"><input type="checkbox" id="vehicle" name="vehicle5" value="Boat"> Gitter help rooms</label>
+      <label class="checkbox"><input type="checkbox" id="vehicle" name="vehicle6" value="Boat"> Videos</label>
+      <label class="checkbox"><input type="checkbox" id="vehicle" name="vehicle7" value="Boat"> City Meetups</label>
+      <label class="checkbox"><input type="checkbox" id="vehicle" name="vehicle8" value="Boat"> Wiki</label>
+      <label class="checkbox"><input type="checkbox" id="vehicle" name="vehicle9" value="Boat"> Forum</label>
+      <label class="checkbox"><input type="checkbox" id="vehicle" name="vehicle10" value="Boat"> Additional Courses</label>    
+      
+      <label>Any comments or suggestions?</label>
+      <textarea name="message" id="message" style="width: 90%; height: 120px;" placeholder="Enter your comment here..."></textarea>
+      
+      <button id="submit" type="submit" >Submit</button>
+              
+    </form>
+  </header>
+  
+<body>
+</html>
